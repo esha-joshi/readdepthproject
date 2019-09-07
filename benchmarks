@@ -5,6 +5,10 @@ virtualenv --system-site-packages ~/.virtualenvs/depthenv
 source ~/.virtualenvs/depthenv/bin/activate
 pip install pysam
 pip install setuptools
+pip install Pandas
+pip install Numpy
+pip install Scipy
+pip install bx-python
 
 #installing hap.py
 git clone https://github.com/sequencing/hap.py
