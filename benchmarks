@@ -1,0 +1,13 @@
+module load python/3.5.4
+mkdir ~/.virtualenvs
+cd ~/.virtualenvs/
+virtualenv --system-site-packages ~/.virtualenvs/depthenv
+source ~/.virtualenvs/depthenv/bin/activate
+pip install pysam
+pip install setuptools
+
+#installing hap.py
+git clone https://github.com/sequencing/hap.py
+mkdir hap.py-build
+cd hap.py-build/
+cmake ../hap.py
