@@ -3,15 +3,16 @@ mkdir ~/.virtualenvs
 cd ~/.virtualenvs/
 virtualenv --system-site-packages ~/.virtualenvs/depthenv
 source ~/.virtualenvs/depthenv/bin/activate
-pip install pysam
-pip install setuptools
-pip install Pandas
-pip install Numpy
-pip install Scipy
-pip install bx-python
+pip3 install --user pysam
+pip3 install --user setuptools
+pip3 install --user Pandas
+pip3 install --user Numpy
+pip3 install --user Scipy
+pip3 install --user bx-python
 
 #installing hap.py
 git clone https://github.com/sequencing/hap.py
 mkdir hap.py-build
 cd hap.py-build/
 cmake ../hap.py
+make
