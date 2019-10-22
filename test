@@ -1,1 +1,3 @@
-#!/bin/sh
+#Hap.py benchmark test
+#ftp://ftp.ensembl.org/pub/release-98/variation/vcf/homo_sapiens/ for chr14 sample query.vcf
+
